@@ -14,7 +14,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 */
 
 import Header from "/src/components/pages/home/components/header";
-import DropDown from "/src/components/shared/DropDown";
+import DropDown from "/src/components/shared/dropdown";
 import HomeSteps from "/src/components/pages/home/components/home-steps";
 import TestimonialSlider from "../../../components/shared/review-slider";
 import Cases from "./components/cases";
