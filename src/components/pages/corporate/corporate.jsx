@@ -42,7 +42,7 @@ function Corporate() {
         />
         <meta
           property="og:image"
-          content="/src/assets/featured/corporate-featured.jpg"
+          content="/assets/featured/corporate-featured.jpg"
         />
       </Helmet>
       <div className="App">

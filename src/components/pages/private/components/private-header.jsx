@@ -40,60 +40,30 @@ const PrivateHeader = () => {
         <div className={styles["header-center"]}>
           <div>
             <img
-              src="../src/assets/private/private-header-1.jpg"
+              src="/assets/private/private-header-1.jpg"
               className={styles["image-center"]}
             />
             <div className={styles["zoom-bar"]}>
-              <img
-                src="../src/assets/icons/menu.png"
-                className={styles["menu"]}
-              />
-              <img
-                src="../src/assets/icons/video.png"
-                className={styles["video"]}
-              />
-              <img
-                src="../src/assets/icons/pause.png"
-                className={styles["pause"]}
-              />
-              <img
-                src="../src/assets/icons/micro.png"
-                className={styles["micro"]}
-              />
-              <img
-                src="../src/assets/icons/phone.png"
-                className={styles["phone"]}
-              />
+              <img src="/assets/icons/menu.png" className={styles["menu"]} />
+              <img src="/assets/icons/video.png" className={styles["video"]} />
+              <img src="/assets/icons/pause.png" className={styles["pause"]} />
+              <img src="/assets/icons/micro.png" className={styles["micro"]} />
+              <img src="/assets/icons/phone.png" className={styles["phone"]} />
             </div>
           </div>
         </div>
         <div className={styles["header-right"]}>
           <div>
             <img
-              src="../src/assets/private/private-header-2.jpg"
+              src="/assets/private/private-header-2.jpg"
               className={styles["image-center"]}
             />
             <div className={styles["zoom-bar"]}>
-              <img
-                src="../src/assets/icons/menu.png"
-                className={styles["menu"]}
-              />
-              <img
-                src="../src/assets/icons/video.png"
-                className={styles["video"]}
-              />
-              <img
-                src="../src/assets/icons/pause.png"
-                className={styles["pause"]}
-              />
-              <img
-                src="../src/assets/icons/micro.png"
-                className={styles["micro"]}
-              />
-              <img
-                src="../src/assets/icons/phone.png"
-                className={styles["phone"]}
-              />
+              <img src="/assets/icons/menu.png" className={styles["menu"]} />
+              <img src="/assets/icons/video.png" className={styles["video"]} />
+              <img src="/assets/icons/pause.png" className={styles["pause"]} />
+              <img src="/assets/icons/micro.png" className={styles["micro"]} />
+              <img src="/assets/icons/phone.png" className={styles["phone"]} />
             </div>
           </div>
         </div>

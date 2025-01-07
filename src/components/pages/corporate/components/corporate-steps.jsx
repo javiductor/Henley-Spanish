@@ -15,21 +15,21 @@ import Steps from "/src/components/shared/steps-1";
 
 const CorporateStepsData = [
   {
-    imgSrc: "../src/assets/icons/path-white.png",
+    imgSrc: "/assets/icons/path-white.png",
     imgAlt: "Path icon",
     title: "Business Spanish",
     description:
       "Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis, diam aliquet ssa maximus suscipit sed at metus. venenatis, diam aliquet.",
   },
   {
-    imgSrc: "../src/assets/icons/video.png",
+    imgSrc: "/assets/icons/video.png",
     imgAlt: "Video icon",
     title: "Team training",
     description:
       "Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis, diam aliquet ssa maximus suscipit sed at metus. venenatis, diam aliquet.",
   },
   {
-    imgSrc: "../src/assets/icons/repeat-white.png",
+    imgSrc: "/assets/icons/repeat-white.png",
     imgAlt: "Repeat icon",
     title: "Business Hour friendly",
     description:

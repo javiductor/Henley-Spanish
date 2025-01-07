@@ -42,7 +42,7 @@ function AboutUs() {
           />
           <meta
             property="og:image"
-            content="/src/assets/featured/about-featured.jpg"
+            content="/assets/featured/about-featured.jpg"
           />
         </Helmet>
         <div className="App">

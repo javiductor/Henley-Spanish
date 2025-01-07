@@ -26,7 +26,7 @@ const Menu = ({ onMenuClick, burgerMenuRef, isOpen }) => {
           <a href="/">
             <img
               className={styles["logo"]}
-              src="/src/assets/logo/logo.png"
+              src="/assets/Logo/logo.png"
               alt="Logo"
             />
           </a>

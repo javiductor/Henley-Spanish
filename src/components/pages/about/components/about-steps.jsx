@@ -15,21 +15,21 @@ import Steps from "/src/components/shared/steps-1";
 
 const AboutStepsData = [
   {
-    imgSrc: "../src/assets/icons/path-white.png",
+    imgSrc: "/assets/icons/path-white.png",
     imgAlt: "Path icon",
     title: "Characteristic 1",
     description:
       "Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis, diam aliquet ssa maximus suscipit sed at metus. venenatis, diam aliquet.",
   },
   {
-    imgSrc: "../src/assets/icons/video.png",
+    imgSrc: "/assets/icons/video.png",
     imgAlt: "Video icon",
     title: "Characteristic 2",
     description:
       "Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis, diam aliquet ssa maximus suscipit sed at metus. venenatis, diam aliquet.",
   },
   {
-    imgSrc: "../src/assets/icons/repeat-white.png",
+    imgSrc: "/assets/icons/repeat-white.png",
     imgAlt: "Repeat icon",
     title: "Characteristic 3",
     description:

@@ -16,7 +16,7 @@ import { BtnSecond } from "../../../shared/buttons";
 
 const HomeStepsData = [
   {
-    imgSrc: "../src/assets/icons/path-white.png",
+    imgSrc: "/assets/icons/path-white.png",
     imgAlt: "Path icon",
     title: "Choose your path",
     description:
@@ -25,7 +25,7 @@ const HomeStepsData = [
     buttonLink: "/courses",
   },
   {
-    imgSrc: "../src/assets/icons/video.png",
+    imgSrc: "/assets/icons/video.png",
     imgAlt: "Video icon",
     title: "Start learning",
     description:
@@ -34,7 +34,7 @@ const HomeStepsData = [
     buttonLink: "/courses",
   },
   {
-    imgSrc: "../src/assets/icons/repeat-white.png",
+    imgSrc: "/assets/icons/repeat-white.png",
     imgAlt: "Repeat icon",
     title: "Practice and repeat",
     description:

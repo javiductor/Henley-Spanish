@@ -30,7 +30,7 @@ function PrivacyPolicy() {
         />
         <meta
           property="og:image"
-          content="/src/assets/featured/legal-featured.jpg"
+          content="/assets/featured/legal-featured.jpg"
         />
       </Helmet>
       <div className="App">

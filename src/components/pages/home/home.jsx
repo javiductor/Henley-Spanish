@@ -89,7 +89,7 @@ function Home() {
           />
           <meta
             property="og:image"
-            content="/src/assets/featured/home-featured.jpg"
+            content="/assets/featured/home-featured.jpg"
           />
         </Helmet>
         <div className="App">

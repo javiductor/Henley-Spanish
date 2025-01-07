@@ -35,7 +35,7 @@ const Footer = () => {
       <div className={styles["footer-container"]}>
         <div className={styles["footer-left"]}>
           <img
-            src="../src/assets/images/Logo big - white.png"
+            src="/assets/Logo/henley-spanish-logo-white.png"
             className={styles["logo-footer"]}
           />
           <div className={styles["footer-text"]}>

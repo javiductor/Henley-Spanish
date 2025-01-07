@@ -41,46 +41,31 @@ const Header = () => {
       <div className={styles["header-center"]}>
         <div>
           <img
-            src="../src/assets/header-final/webp/image-center-6.webp"
+            src="/assets/header-final/webp/image-center-6.webp"
             className={styles["image-center"]}
           />
           <div className={styles["zoom-bar"]}>
-            <img
-              src="../src/assets/icons/menu.png"
-              className={styles["menu"]}
-            />
-            <img
-              src="../src/assets/icons/video.png"
-              className={styles["video"]}
-            />
-            <img
-              src="../src/assets/icons/pause.png"
-              className={styles["pause"]}
-            />
-            <img
-              src="../src/assets/icons/micro.png"
-              className={styles["micro"]}
-            />
+            <img src="/assets/icons/menu.png" className={styles["menu"]} />
+            <img src="/assets/icons/video.png" className={styles["video"]} />
+            <img src="/assets/icons/pause.png" className={styles["pause"]} />
+            <img src="/assets/icons/micro.png" className={styles["micro"]} />
             <a href="https://calendly.com/henleyspanishcentre/assessment-call">
-              <img
-                src="../src/assets/icons/phone.png"
-                className={styles["phone"]}
-              />
+              <img src="/assets/icons/phone.png" className={styles["phone"]} />
             </a>
           </div>
         </div>
       </div>
       <div className={styles["header-right"]}>
         <img
-          src="../src/assets/header-final/webp/header-right-1.webp"
+          src="/assets/header-final/webp/header-right-1.webp"
           className={styles["image-right"]}
         />
         <img
-          src="../src/assets/header-final/webp/header-right-2.webp"
+          src="/assets/header-final/webp/header-right-2.webp"
           className={styles["image-right"]}
         />
         <img
-          src="../src/assets/header-final/webp/header-right-3.webp"
+          src="/assets/header-final/webp/header-right-3.webp"
           className={styles["image-right"]}
         />
       </div>

@@ -43,13 +43,13 @@ const AboutHeader = () => {
       <div className={styles["header-images"]}>
         <div id={styles["image-card-1"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/about/about-header-1.jpg"
+            src="/assets/about/about-header-1.jpg"
             className={styles["image-right"]}
           />
         </div>
         <div id={styles["image-card-2"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/about/about-header-3.jpg"
+            src="/assets/about/about-header-3.jpg"
             className={styles["image-right"]}
           />
         </div>
@@ -57,13 +57,13 @@ const AboutHeader = () => {
       <div className={styles["header-images"]}>
         <div id={styles["image-card-3"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/about/about-header-2.jpg"
+            src="/assets/about/about-header-2.jpg"
             className={styles["image-right"]}
           />
         </div>
         <div id="image-card-4" className={styles["image-card"]}>
           <img
-            src="../src/assets/about/about-header-4.jpg"
+            src="/assets/about/about-header-4.jpg"
             className={styles["image-right"]}
           />
         </div>

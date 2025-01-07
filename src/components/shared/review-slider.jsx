@@ -70,22 +70,22 @@ const TestimonialSlider = () => {
           </p>
           <div className={styles["review-images"]}>
             <img
-              src="../src/assets/reviews/man-1.jpg"
+              src="/assets/reviews/man-1.jpg"
               className={styles["review-image-left"]}
               alt="Testimonial 1"
             />
             <img
-              src="../src/assets/reviews/woman-1.jpg"
+              src="/assets/reviews/woman-1.jpg"
               className={styles["review-image-left"]}
               alt="Testimonial 2"
             />
             <img
-              src="../src/assets/reviews/man-2.jpg"
+              src="/assets/reviews/man-2.jpg"
               className={styles["review-image-left"]}
               alt="Testimonial 3"
             />
             <img
-              src="../src/assets/reviews/woman-2.jpg"
+              src="/assets/reviews/woman-2.jpg"
               className={styles["review-image-left"]}
               alt="Testimonial 4"
             />

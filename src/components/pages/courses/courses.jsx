@@ -44,7 +44,7 @@ function Courses() {
         />
         <meta
           property="og:image"
-          content="/src/assets/featured/courses-featured.jpg"
+          content="/assets/featured/courses-featured.jpg"
         />
       </Helmet>
       <div className="App">

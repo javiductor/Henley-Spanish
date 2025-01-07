@@ -19,7 +19,7 @@ const PrivateLeftRight = () => {
       title="Private Courses"
       heading="Learn Spanish on your own or with a friend."
       description="Curabitur ornare neque a pretium tincidunt. Quisque imperdiet lacus eros, in finibus ex bibendum a. Quisque cursus, ipsum ac pretium tristique, ante nisi finibus lacus, auctor gravida massa lectus et metus. Aenean eget consequat libero. Cras in nibh hendrerit, lobortis libero quis, mollis nibh. Aliquam suscipit metus quis lacus tempus, sed congue metus egestas."
-      imgSrc="../src/assets/courses/header-1.jpg"
+      imgSrc="/assets/courses/header-1.jpg"
       imgAlt="Online Group Course"
       buttonText="Learn More"
       buttonLink="/about"

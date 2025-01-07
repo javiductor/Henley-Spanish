@@ -18,7 +18,7 @@ const faqData = [
     question: "Do you offer one-off lessons?",
     answer:
       "Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis, diam aliquet ssa maximus suscipit sed at metus...",
-    imgSrc: "/src/assets/icons/phone.png",
+    imgSrc: "/assets/icons/phone.png",
   },
   {
     question: "Do you tutor children?",

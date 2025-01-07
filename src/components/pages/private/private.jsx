@@ -47,7 +47,7 @@ function Private() {
         />
         <meta
           property="og:image"
-          content="/src/assets/featured/private-featured.jpg"
+          content="/assets/featured/private-featured.jpg"
         />
       </Helmet>
       <div className="App">

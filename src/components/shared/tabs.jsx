@@ -59,27 +59,27 @@ const Tabs = ({
           {showZoomBar && (
             <div className={styles["zoom-bar"]}>
               <img
-                src="../src/assets/icons/menu.png"
+                src="/assets/icons/menu.png"
                 className={styles["menu"]}
                 alt="Menu icon"
               />
               <img
-                src="../src/assets/icons/video.png"
+                src="/assets/icons/video.png"
                 className={styles["video"]}
                 alt="Video icon"
               />
               <img
-                src="../src/assets/icons/pause.png"
+                src="/assets/icons/pause.png"
                 className={styles["pause"]}
                 alt="Pause icon"
               />
               <img
-                src="../src/assets/icons/micro.png"
+                src="/assets/icons/micro.png"
                 className={styles["micro"]}
                 alt="Microphone icon"
               />
               <img
-                src="../src/assets/icons/phone.png"
+                src="/assets/icons/phone.png"
                 className={styles["phone"]}
                 alt="Phone icon"
               />

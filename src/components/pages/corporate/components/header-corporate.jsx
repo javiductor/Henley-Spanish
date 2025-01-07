@@ -41,13 +41,13 @@ const CoursesHeader = () => {
       <div className={styles["header-images"]}>
         <div id={styles["image-card-1"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/corporate/business-1.jpg"
+            src="/assets/corporate/business-1.jpg"
             className={styles["image-right"]}
           />
         </div>
         <div id={styles["image-card-2"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/corporate/business-9.jpg"
+            src="/assets/corporate/business-9.jpg"
             className={styles["image-right"]}
           />
         </div>
@@ -55,13 +55,13 @@ const CoursesHeader = () => {
       <div className={styles["header-images"]}>
         <div id={styles["image-card-3"]} className={styles["image-card"]}>
           <img
-            src="../src/assets/corporate/business-10.jpg"
+            src="/assets/corporate/business-10.jpg"
             className={styles["image-right"]}
           />
         </div>
         <div id="image-card-4" className={styles["image-card"]}>
           <img
-            src="../src/assets/corporate/business-7.jpg"
+            src="/assets/corporate/business-7.jpg"
             className={styles["image-right"]}
           />
         </div>
