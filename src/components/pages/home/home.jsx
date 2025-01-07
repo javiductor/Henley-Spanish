@@ -18,7 +18,7 @@ import DropDown from "/src/components/shared/dropdown";
 import HomeSteps from "/src/components/pages/home/components/home-steps";
 import TestimonialSlider from "../../../components/shared/review-slider";
 import Cases from "./components/cases";
-import AboutUs from "./components/about-us-section";
+import HomeAboutUs from "./components/about-us-section";
 import FaqHome from "/src/components/pages/home/components/faq-home";
 
 /*
@@ -99,7 +99,7 @@ function Home() {
           <HomeSteps />
           <TestimonialSlider />
           <Cases />
-          <AboutUs />
+          <HomeAboutUs />
           <FaqHome />
         </div>
       </>

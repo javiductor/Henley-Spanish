@@ -14,7 +14,7 @@ import { BtnSecond } from "../../../shared/buttons";
 -------------------------------------------------------------------------
 */
 
-const AboutUs = () => {
+const HomeAboutUs = () => {
   return (
     <LeftRightSection
       title="About Us"
@@ -35,4 +35,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default HomeAboutUs;
