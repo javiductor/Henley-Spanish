@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -14,21 +14,16 @@ import NavbarParent from "./components/shared/navbar-parent";
 import DropDown from "./components/shared/dropdown.jsx";
 import Footer from "./components/shared/footer";
 import ScrollToTop from "./components/shared/scroll-to-top";
+import Home from "./components/pages/home/home";
+import AboutUs from "./components/pages/about/about";
+import Courses from "./components/pages/courses/courses";
+import Private from "./components/pages/private/private";
+import Corporate from "./components/pages/corporate/corporate";
+import Contact from "./components/pages/contact/contact";
+import PrivacyPolicy from "./components/pages/privacy-policy/privacy-policy";
 import "./App.css";
-import styles from "/src/styles/cookie-banner.module.css";
+import styles from "./styles/cookie-banner.module.css";
 import { Cookie } from "lucide-react";
-
-const Home = lazy(() => import("/src/components/pages/home/home"));
-const AboutUs = lazy(() => import("/src/components/pages/About/About"));
-const Courses = lazy(() => import("/src/components/pages/courses/courses"));
-const Private = lazy(() => import("/src/components/pages/private/private"));
-const Corporate = lazy(() =>
-  import("/src/components/pages/corporate/corporate")
-);
-const Contact = lazy(() => import("/src/components/pages/contact/contact"));
-const PrivacyPolicy = lazy(() =>
-  import("./components/pages/privacy-policy/privacy-policy")
-);
 
 function PageViewTracker() {
   const location = useLocation();
@@ -95,17 +90,15 @@ function App() {
       <DropDown />
       <ScrollToTop />
       <PageViewTracker />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/private" element={<Private />} />
-          <Route path="/corporate" element={<Corporate />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/private" element={<Private />} />
+        <Route path="/corporate" element={<Corporate />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
       <Footer />
     </Router>
   );
