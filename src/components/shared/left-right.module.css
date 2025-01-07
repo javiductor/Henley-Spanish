@@ -1,0 +1,195 @@
+.left-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 30px;
+  gap: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* justify-content: center; */
+  padding: 0;
+  margin: 0;
+}
+
+.right {
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.left h5 {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  color: #4a41f4;
+}
+
+.left > h5 {
+  align-self: flex-start;
+}
+
+.left h2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.left p {
+  text-align: left;
+}
+
+.left a {
+  align-self: flex-start;
+}
+
+.image-left {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.thumb {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+/* ----------- Zoom Bar ----------- */
+.zoom-bar {
+  background-color: #2e2e2e;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.zoom-bar img {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.zoom-bar > .phone {
+  background-color: #4a41f4;
+  rotate: -140deg;
+}
+
+.phone:hover {
+  background-color: black;
+}
+
+/* ----------- Media Queries ----------- */
+/* ----------- Media Queries ----------- */
+
+/* 1. Phone (up to 575.98px) */
+@media (max-width: 575.98px) {
+  .left-right-container {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .thumb {
+    width: 75px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/* 2. Tablet (576px to 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .left-right-container {
+    flex-direction: column;
+    padding-left: max(5vw, 40px);
+    padding-right: max(5vw, 40px);
+  }
+
+  .thumb {
+    width: 150px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .zoom-bar {
+    bottom: 50px;
+    border-radius: 50px;
+  }
+
+  .zoom-bar img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* 3. Desktop (992px to 1399.98px) */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+  .left-right-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: max(5vw, 40px);
+    padding-right: max(5vw, 40px);
+    gap: 100px;
+  }
+
+  .thumb {
+    width: 150px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .zoom-bar {
+    bottom: 50px;
+  }
+}
+
+/* 4. Larger screens (1400px and above) */
+@media (min-width: 1400px) {
+  .left-right-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: max(5vw, 40px);
+    padding-right: max(5vw, 40px);
+    gap: 100px;
+  }
+
+  .left-right-container.reverse {
+    flex-direction: row-reverse;
+    margin-top: 0;
+  }
+
+  .thumb {
+    width: 150px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .zoom-bar {
+    bottom: 50px;
+  }
+}

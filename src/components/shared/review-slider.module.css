@@ -1,0 +1,243 @@
+.review-continer {
+  display: flex;
+  gap: 30px;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: max(5vw, 40px);
+  margin-right: max(5vw, 40px);
+  padding-left: max(3vw, 40px);
+  padding-right: max(3vw, 40px);
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: -2;
+  min-height: 660px;
+  overflow: hidden;
+}
+
+.review-left {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+  padding: max(3vw, 20px);
+  justify-content: center;
+}
+
+.review-images {
+  display: flex;
+  align-items: center;
+}
+
+.review-image-left {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+.review-image-left:first-child {
+  margin-left: 0px;
+}
+
+.review-right {
+  display: flex;
+  flex-direction: column;
+  flex: 60%;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: max(3vw, 20px);
+  padding-bottom: max(3vw, 20px);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.review-right.fade-out {
+  opacity: 0; /* Fade out */
+}
+
+.review-right.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+.quote-icon {
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #1c5bfe;
+  line-height: 100%;
+}
+
+.review {
+  font-size: 32px;
+  margin: 0px;
+  line-height: 47px;
+  font-weight: 400;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-top: 30px;
+}
+
+.review-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.review-author-info p {
+  line-height: 100%;
+  font-size: 16px;
+}
+
+.review-author-name {
+  margin-bottom: 0px;
+  font-weight: 700;
+  padding: 0px;
+}
+
+.review-author-level {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.btn-prev,
+.btn-next {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  font-family: "Inter" sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-top: 30px;
+  background-color: #1a191c;
+  cursor: pointer;
+  color: white;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .review-continer {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    padding: 0px;
+    gap: 0px;
+    margin-top: 50px;
+  }
+
+  .review-left {
+    padding: 50px 20px 0px 20px;
+  }
+
+  .review-right {
+    padding: 20px;
+  }
+
+  /* .review-images {
+    display: none;
+  } */
+
+  .review {
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .review-continer {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .review-left {
+    padding: 50px 25px;
+  }
+
+  .review {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+  .review-continer {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .review-left {
+    padding: 50px 25px;
+  }
+
+  .review {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .review-continer {
+    flex-direction: row;
+    padding-left: max(3vw, 40px);
+    padding-right: max(3vw, 40px);
+  }
+
+  .review-left {
+    padding: 50px 25px;
+  }
+
+  .review {
+    font-size: 34px;
+    line-height: 47px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .review-continer {
+    flex-direction: row;
+    padding-left: max(3vw, 40px);
+    padding-right: max(3vw, 40px);
+  }
+
+  .review-left {
+    padding: 50px 25px;
+  }
+
+  .review {
+    font-size: 34px;
+    line-height: 47px;
+  }
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+  .review-continer {
+    flex-direction: row;
+    padding-left: max(3vw, 40px);
+    padding-right: max(3vw, 40px);
+    margin-left: max(5vw, 40px);
+    margin-right: max(5vw, 40px);
+  }
+
+  .review-left {
+    padding: 50px 25px;
+  }
+
+  .review {
+    font-size: 34px;
+    line-height: 47px;
+  }
+}

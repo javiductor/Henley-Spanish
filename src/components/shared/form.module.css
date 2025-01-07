@@ -1,0 +1,138 @@
+/* form.module.css */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.fieldTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputField {
+  flex: 1;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.inputField input,
+.inputField textarea {
+  width: 100%;
+  padding: 20px 20px 20px 50px;
+  background-color: #f8f7ff;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  box-sizing: border-box;
+  resize: none;
+  transition: border-color 0.3s ease;
+  line-height: 1.5;
+}
+
+.inputField input:focus,
+.inputField textarea:focus {
+  outline: none;
+  border-color: #4a41f4;
+}
+
+.inputField input {
+  border-radius: 20px;
+  height: 60px;
+}
+
+.inputField textarea {
+  min-height: 175px;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.inputField input::placeholder,
+.inputField textarea::placeholder {
+  color: #b8b8b8;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  color: #b8b8b8;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.inputField input:focus ~ .icon,
+.inputField textarea:focus ~ .icon {
+  color: #4a41f4;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.button {
+  padding: 20px;
+  background-color: #4a41f4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  width: 30%;
+  align-self: flex-end;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1a191c;
+}
+
+.consentText {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.consentText a {
+  color: #4a41f4;
+  text-decoration: none;
+  text-align: right;
+}
+
+.consentText a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 575.98px) {
+  .form {
+    padding: 30px 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .form {
+    padding: 30px 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .form {
+    padding: 30px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+}

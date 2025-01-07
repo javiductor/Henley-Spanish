@@ -1,0 +1,41 @@
+ File Structure
+
+ /public
+   index.html  // Main HTML template file (used by Vite)
+   favicon.ico // Your favicon, if any
+   
+/src
+   /assets
+      /images
+         logo.png  // Example image
+         banner.jpg
+      /styles
+         globals.css  // Global styles applied across the site
+         variables.css  // CSS variables or common style definitions
+         typography.css  // Common typography styles
+   /components
+      /shared
+         Header.jsx
+         Footer.jsx
+         Button.jsx
+         Button.module.css  // Styles for the button component
+      /pages
+         /Home
+            HomePage.jsx
+            HomePage.module.css  // Styles specific to the home page
+         /About
+            AboutPage.jsx
+            AboutPage.module.css
+         /Contact
+            ContactPage.jsx
+            ContactPage.module.css
+   App.jsx       // Main App component
+   Main.jsx      // Entry point, where ReactDOM.render is called
+   index.css     // Import global styles and reset CSS here
+
+/vite.config.js  // Vite configuration
+/scroll.js       // JS for scrolling behavior if not tied to React components
+/package.json    // Project dependencies
+/package-lock.json // Lock file for dependencies
+/eslint.config.js  // Linting rules
+/.gitignore       // Git ignore file

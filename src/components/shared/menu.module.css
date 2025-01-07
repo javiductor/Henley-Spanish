@@ -1,0 +1,103 @@
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-left: max(5vw, 40px);
+  padding-right: max(5vw, 40px);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  gap: 0px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  flex: 25%;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.menu-btns {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+  flex: 45%;
+  margin-right: 0px;
+  align-items: flex-start;
+}
+
+.btncta {
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  pointer-events: auto;
+  padding: 18px 30px;
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 13px;
+  border-radius: 50px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #4a41f4;
+  border: none;
+  color: white;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .btncta {
+    display: none;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .btncta {
+    display: block;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+  .btncta {
+    display: block;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .btncta {
+    display: block;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .btncta {
+    display: block;
+  }
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+  .btncta {
+    display: block;
+  }
+}

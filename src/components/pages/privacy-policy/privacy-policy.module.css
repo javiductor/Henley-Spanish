@@ -1,0 +1,22 @@
+.privacy-container {
+  margin-left: max(10vw, 40px);
+  margin-right: max(10vw, 40px);
+  margin-top: max(5vw, 40px);
+}
+
+.privacy-container a {
+  text-align: left;
+  color: #1a191c;
+}
+
+.privacy-container li {
+  font-size: 16px;
+}
+
+.privacy-container h2 {
+  margin-bottom: 0px;
+}
+
+.privacy-container h3 {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,57 @@
+.squiggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vw;
+  z-index: -1;
+  fill: none;
+}
+
+.path {
+  stroke: #4a41f4;
+  stroke-width: 40px;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .squiggle {
+    display: none;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .squiggle {
+    display: none;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+  .squiggle {
+    display: none;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .squiggle {
+    display: block;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .squiggle {
+    display: block;
+  }
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+  .squiggle {
+    display: block;
+  }
+}
