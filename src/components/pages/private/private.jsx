@@ -16,7 +16,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import PrivateHeader from "./components/private-header";
 import PrivateLessonsSteps from "./components/private-lessons-steps";
 import TestimonialSlider from "../../../components/shared/review-slider";
-import CTA from "/src/components/shared/CTA";
+import CTA from "/src/components/shared/cta";
 import FaqPrivate from "./components/faq-private";
 import Privatetabs from "./components/private-tabs";
 
