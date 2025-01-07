@@ -11,14 +11,13 @@ import CookieConsent from "react-cookie-consent";
 import { initGA } from "./main.jsx";
 
 import NavbarParent from "./components/shared/navbar-parent";
-import DropDown from "/src/components/shared/DropDown";
+import DropDown from "./components/shared/dropdown.jsx";
 import Footer from "./components/shared/footer";
 import ScrollToTop from "./components/shared/scroll-to-top";
 import "./App.css";
 import styles from "/src/styles/cookie-banner.module.css";
 import { Cookie } from "lucide-react";
 
-// Lazy load route components
 const Home = lazy(() => import("/src/components/pages/home/home"));
 const AboutUs = lazy(() => import("/src/components/pages/About/About"));
 const Courses = lazy(() => import("/src/components/pages/courses/courses"));
@@ -30,14 +29,6 @@ const Contact = lazy(() => import("/src/components/pages/contact/contact"));
 const PrivacyPolicy = lazy(() =>
   import("./components/pages/privacy-policy/privacy-policy")
 );
-
-/*
-|-------------------------------------------------------------------------
-| PageViewTracker Function (gets called in App)
-|-------------------------------------------------------------------------
-|
-|
-*/
 
 function PageViewTracker() {
   const location = useLocation();
@@ -53,15 +44,6 @@ function PageViewTracker() {
 
   return null;
 }
-
-/*
-|-------------------------------------------------------------------------
-| App Function
-|-------------------------------------------------------------------------
-|
-| Router, CookieConsent, ScrollToTop, PageViewTracker, ScrollDown  
-|
-*/
 
 function App() {
   const [gaInitialized, setGaInitialized] = useState(false);
