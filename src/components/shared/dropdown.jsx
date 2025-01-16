@@ -12,7 +12,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const DropDown = () => {
+const DropDown = ({ onLinkClick }) => {
   return (
     <div className={styles["dropdown-container"]}>
       <div className={styles["dropdown-left"]}>
@@ -28,7 +28,7 @@ const DropDown = () => {
       </div>
 
       <div className={styles["dropdown-center"]}>
-        <Link to="/" className={styles["menu-item"]}>
+        <Link to="/" className={styles["menu-item"]} onClick={onLinkClick}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Home className={styles["menu-icon"]} />
@@ -38,7 +38,11 @@ const DropDown = () => {
           </div>
           <p className={styles["dropdown-small"]}>An online Spanish School.</p>
         </Link>
-        <Link to="/courses" className={styles["menu-item"]}>
+        <Link
+          to="/courses"
+          className={styles["menu-item"]}
+          onClick={onLinkClick}
+        >
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <BookOpen className={styles["menu-icon"]} />
@@ -50,7 +54,11 @@ const DropDown = () => {
             See our group and private spanish courses.
           </p>
         </Link>
-        <Link to="/private" className={styles["menu-item"]}>
+        <Link
+          to="/private"
+          className={styles["menu-item"]}
+          onClick={onLinkClick}
+        >
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <User className={styles["menu-icon"]} />
@@ -65,7 +73,11 @@ const DropDown = () => {
       </div>
 
       <div className={styles["dropdown-right"]}>
-        <Link to="/corporate" className={styles["menu-item"]}>
+        <Link
+          to="/corporate"
+          className={styles["menu-item"]}
+          onClick={onLinkClick}
+        >
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Building className={styles["menu-icon"]} />
@@ -77,7 +89,7 @@ const DropDown = () => {
             Upskill your employees with Spanish lessons.
           </p>
         </Link>
-        <Link to="/about" className={styles["menu-item"]}>
+        <Link to="/about" className={styles["menu-item"]} onClick={onLinkClick}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Users className={styles["menu-icon"]} />
@@ -89,7 +101,11 @@ const DropDown = () => {
             Find out who we are and what we do.
           </p>
         </Link>
-        <Link to="/contact" className={styles["menu-item"]}>
+        <Link
+          to="/contact"
+          className={styles["menu-item"]}
+          onClick={onLinkClick}
+        >
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Mail className={styles["menu-icon"]} />

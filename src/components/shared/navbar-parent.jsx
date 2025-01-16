@@ -23,6 +23,10 @@ const NavbarParent = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
 
+  const handleLinkClick = () => {
+    setIsDropdownVisible(false);
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -39,6 +43,32 @@ const NavbarParent = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownVisible]);
+
+  // Handle escape key press
+  useEffect(() => {
+    const handleEscapeKey = (event) => {
+      if (event.key === "Escape" && isDropdownVisible) {
+        setIsDropdownVisible(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscapeKey);
+    return () => {
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [isDropdownVisible]);
+
+  // Prevent body scroll when dropdown is open
+  useEffect(() => {
+    if (isDropdownVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
     };
   }, [isDropdownVisible]);
 
@@ -59,7 +89,7 @@ const NavbarParent = () => {
         ref={dropdownRef}
         className={`${styles.dropdown} ${isDropdownVisible ? styles.show : ""}`}
       >
-        <DropDown />
+        <DropDown onLinkClick={handleLinkClick} />
       </div>
     </>
   );
