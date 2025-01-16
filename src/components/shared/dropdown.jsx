@@ -88,7 +88,7 @@ const DropDown = () => {
             Upskill your employees with Spanish lessons.
           </p>
         </a>
-        <a href="/about" className={styles["menu-item"]}>
+        <a href="/about-us" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Users className={styles["menu-icon"]} />
