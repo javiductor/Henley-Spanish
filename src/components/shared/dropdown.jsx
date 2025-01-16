@@ -1,10 +1,5 @@
-/*
--------------------------------------------------------------------------
-| Import of React, CSS, Buttons & Lucide-React Icons
--------------------------------------------------------------------------
-*/
-
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./dropdown.module.css";
 import { BtnCTA } from "./buttons";
 import {
@@ -16,12 +11,6 @@ import {
   Mail,
   ArrowUpRight,
 } from "lucide-react";
-
-/*
--------------------------------------------------------------------------
-| Dropdown Menu Section
--------------------------------------------------------------------------
-*/
 
 const DropDown = () => {
   return (
@@ -39,7 +28,7 @@ const DropDown = () => {
       </div>
 
       <div className={styles["dropdown-center"]}>
-        <a href="/" className={styles["menu-item"]}>
+        <Link to="/" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Home className={styles["menu-icon"]} />
@@ -48,8 +37,8 @@ const DropDown = () => {
             <ArrowUpRight className={styles["arrow"]} />
           </div>
           <p className={styles["dropdown-small"]}>An online Spanish School.</p>
-        </a>
-        <a href="/courses" className={styles["menu-item"]}>
+        </Link>
+        <Link to="/courses" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <BookOpen className={styles["menu-icon"]} />
@@ -60,8 +49,8 @@ const DropDown = () => {
           <p className={styles["dropdown-small"]}>
             See our group and private spanish courses.
           </p>
-        </a>
-        <a href="/private" className={styles["menu-item"]}>
+        </Link>
+        <Link to="/private" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <User className={styles["menu-icon"]} />
@@ -72,11 +61,11 @@ const DropDown = () => {
           <p className={styles["dropdown-small"]}>
             1-2-1 Spanish Lessons for students of all ages.
           </p>
-        </a>
+        </Link>
       </div>
 
       <div className={styles["dropdown-right"]}>
-        <a href="/corporate" className={styles["menu-item"]}>
+        <Link to="/corporate" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Building className={styles["menu-icon"]} />
@@ -87,8 +76,8 @@ const DropDown = () => {
           <p className={styles["dropdown-small"]}>
             Upskill your employees with Spanish lessons.
           </p>
-        </a>
-        <a href="/about-us" className={styles["menu-item"]}>
+        </Link>
+        <Link to="/about" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Users className={styles["menu-icon"]} />
@@ -99,8 +88,8 @@ const DropDown = () => {
           <p className={styles["dropdown-small"]}>
             Find out who we are and what we do.
           </p>
-        </a>
-        <a href="/contact" className={styles["menu-item"]}>
+        </Link>
+        <Link to="/contact" className={styles["menu-item"]}>
           <div className={styles["menu-item-top"]}>
             <div className={styles["menu-item-content"]}>
               <Mail className={styles["menu-icon"]} />
@@ -111,7 +100,7 @@ const DropDown = () => {
           <p className={styles["dropdown-small"]}>
             Have a question? Get in touch with us today!
           </p>
-        </a>
+        </Link>
       </div>
     </div>
   );
