@@ -32,7 +32,10 @@ const DropDown = () => {
           Mauris a massa vel massa maximus suscipit sed at metus. Nam venenatis,
           diam aliquet ssa maximus suscipit.
         </p>
-        <BtnCTA />
+        <BtnCTA
+          text="Book A Call"
+          href="https://calendly.com/henleyspanishcentre/assessment-call"
+        />
       </div>
 
       <div className={styles["dropdown-center"]}>
